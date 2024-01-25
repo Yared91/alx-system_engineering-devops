@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+j=0
+
+until [ "$j" -gt 10 ]
+do
+	echo "Best School"
+	j=$(( j + 1 ))
+done

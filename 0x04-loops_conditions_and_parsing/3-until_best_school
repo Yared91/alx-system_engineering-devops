@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+# Displays "Holberton School" 10 times using an until loop.
 
-j=0
+count=0
 
-until [ "$j" -gt 10 ]
+until [ $count -eq 10 ]
 do
-	echo "Best School"
-	j=$(( j + 1 ))
+  echo "Holberton School"
+  (( count++ ))
 done

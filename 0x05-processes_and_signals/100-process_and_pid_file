@@ -3,16 +3,16 @@
 #Displays "To infinity and beyond" indefinitely
 #Displays "I hate the kill command" upon receiving a SIGTERM
 #Displays "Y U no love me?!" upon receiving a SIGINT
-#Deletes the file /var/run/holbertonscript.pid and terminates upon
-#receiving a SIGQUIT or SIGTERM.
+#Deletes the file /var/run/holbertonscript.pid and terminates itself
+#When receiving a SIGQUIT or SIGTERM signal.
 
-terminator()
+terminator ()
 {
-	rm /var/run/holbertonscript.pid
+	rm /var/run/myscript.pid
 	exit
 }
 
-echo "$$" > /var/run/holbertonscript.pid
+echo "$$" > /var/run/myscript.pid
 
 while true
 do

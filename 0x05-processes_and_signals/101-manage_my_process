@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # Manages the script manage_my_process.
 #   When passed the argument `start`:
 #     1. Starts manage_my_process
@@ -14,8 +15,8 @@
 #     3. Starts manage_my_process
 #     4. Creates a file containing its PID in /var/run/my_process.pid
 #     5. Displays "manage_my_process restarted"
-#   If any other or no arguments are passed, displays
-#   "Usage: manage_my_process {start|stop|restart}"
+#   Displays "Usage: manage_my_process {start|stop|restart}"
+#   If any other or no arguments are passed.
 
 if [ "$1" == "start" ]
 then
